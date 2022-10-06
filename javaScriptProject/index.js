@@ -25,7 +25,7 @@ let apiKey = 'e0a5b6efdcdb4b05a2f634aa578e25ce'
 
 
 const xhr = new XMLHttpRequest();
-xhr.open('GET', `https://newsapi.org/v2/everything?q=tesla&from=2022-09-06&sortBy=publishedAt&apiKey=${apiKey}`, true);
+xhr.open('GET', `https://newsapi.org/v2/top-headlines?country=in&apiKey=${apiKey}`, true);
 xhr.getResponseHeader('content-type', 'application/json');
 
 xhr.onload = function () {
